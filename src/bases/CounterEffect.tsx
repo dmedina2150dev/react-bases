@@ -15,7 +15,7 @@ export const CounterEffect = () => {
     }
 
     useLayoutEffect(() => { // TODO: Es recomendable usar este efecto Layout para asegurarnos de que se ejecute despues de construido el HTML
-        if (counter > 10 ) return;
+        if (counter < 10 ) return;
         console.log('%cse llego al valor maximo','color: red; background-color: black;');
         
         // TODO: Lo recomendado por gsap
